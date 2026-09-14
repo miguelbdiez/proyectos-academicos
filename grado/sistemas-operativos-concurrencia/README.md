@@ -31,19 +31,30 @@ que libera a todos los hilos a la vez una vez creados.
 ## Estructura
 
 ```
-lomo2.cpp    Lógica de la simulación: creación de hilos, sincronización y bucle de cada tren
-lomo2.h      Declaraciones
-lomo2.sln    Solución de Visual Studio
+lomo2.sln                        Solución de Visual Studio
+prueba3/
+  lomo2.cpp                      Simulación: creación de hilos, sincronización y bucle de cada tren
+  lomo2.h                        Declaraciones
+  prueba3.vcxproj                Proyecto MSBuild
+  prueba3.vcxproj.filters
+  mapa.html                      Representación del mapa de vías
+docs/                            Memoria y listado comentado
 ```
 
 ## Compilación
 
 Proyecto de Visual Studio para Windows: abre `lomo2.sln` y compila.
 
+> Dos arreglos sobre la entrega original, necesarios para que el proyecto se pueda abrir:
+> el fichero de proyecto venía renombrado como `prueba3.vcxproj.xml` (la solución buscaba
+> `prueba3.vcxproj` y no lo encontraba), y sus rutas apuntaban a una carpeta
+> `AplicacionLomo` de la máquina donde se desarrolló, que no forma parte de la entrega.
+> Ahora son relativas al repositorio.
+
 > **Dependencia externa.** El programa carga en tiempo de ejecución `lomo2.dll`, la
 > biblioteca de simulación y renderizado del mapa proporcionada por la asignatura
 > (`GenerarMapa`, `PetAvance`, `Avance`, `GetColor`…). No se redistribuye aquí. El código
-> la espera en `../libs/lomo2.dll`.
+> la espera en `prueba3/../libs/lomo2.dll`.
 
 ---
 
