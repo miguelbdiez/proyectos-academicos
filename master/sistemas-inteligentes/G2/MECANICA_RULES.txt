@@ -1,0 +1,109 @@
+initially in order show inicio and conclude that the gasolina of forito is desconocido and
+conclude that the temperatura of forito is desconocido and conclude that the correa
+of forito is desconocido and conclude that the aceite of forito is desconocido and
+conclude that the bujias of forito is desconocido and conclude that the humo of
+forito is desconocido
+
+whenever the diagnostico of any coche C receives a value and when the diagnostico of
+C is true and the diag_valor of C is fallo_dist then inform the operator on the
+subworkspace of forito that "El problema mecanico del FORITO es un fallo de la
+distribucion" and show the subworkspace of forito and pause knowledge-base
+
+whenever the diagnostico of any coche C receives a value and when the diagnostico of
+C is true and the diag_valor of C is fallo_trocola then inform the operator on the
+subworkspace of forito that "Se ha producido un fallo de la trocola" and show the
+subworkspace of forito and pause knowledge-base
+
+whenever the diagnostico of any coche C receives a value and when the diagnostico of
+C is true and the diag_valor of C is bujias_mal then inform the operator on the
+subworkspace of forito that "El uso que se le ha dado a las bujias es excesivo, hay
+que cambiarlas" and show the subworkspace of forito and pause knowledge-base
+
+whenever the diagnostico of any coche C receives a value and when the diagnostico of
+C is true and the diag_valor of C is carter_perf then inform the operator on the
+subworkspace of forito that "Se ha perforado el carter del pobre FORITO, paga y te
+lo cambiaran" and show the subworkspace of forito and pause knowledge-base
+
+whenever the diagnostico of any coche C receives a value and when the diagnostico of
+C is true and the diag_valor of C is revision then inform the operator on the
+subworkspace of forito that "El FORITO necesita una revision total y a fondo" and
+show the subworkspace of forito and pause knowledge-base
+
+whenever the diagnostico of any coche C receives a value and when the diagnostico of
+C is true and the diag_valor of C is refrigeracion_mal then inform the operator on
+the subworkspace of forito that "Cuidado!!, tien problemas de refrigeracion y
+tendras que revisar el radiador" and show the subworkspace of forito and pause
+knowledge-base
+
+whenever the diagnostico of any coche C receives a value and when the diagnostico of
+C is true and the diag_valor of C is seg_cam_gastados then inform the operator on
+the subworkspace of forito that "El humo blanco es a causa de que el FORITO tiene
+el segmento y las camisas gastadas" and show the subworkspace of forito and pause
+knowledge-base
+
+for any coche C if the gasolina of C is desconocido then show gasolina_ask at the center
+of the screen
+
+for any coche C if the gasolina of C is si then invoke correa_reglas rules
+
+for any coche C if the gasolina of C is no then invoke temperatura_reglas rules
+
+whenever gasolina_var receives a value then conclude that the gasolina of forito = the
+value of gasolina_var
+
+for any coche C if the correa of C is desconocido and the gasolina of C is si then show
+correa_ask at the center of the screen
+
+for any coche C if the correa of C is bueno then invoke bujias_reglas rules
+
+for any coche C if the correa of C is malo then conclude that the diagnostico of C is true
+and conclude that the diag_valor of C is fallo_dist
+
+whenever correa_var receives a value then conclude that the correa of forito = the value
+of correa_var
+
+for any coche C if the bujias of C is desconocido and the gasolina of C is si and the
+correa of C is bueno then show bujias_ask at the center of the screen
+
+for any coche C if the bujias of C is malo then conclude that the diagnostico of C is true
+and conclude that the diag_valor of C is bujias_mal
+
+for any coche C if the bujias of C is bueno then conclude that the diagnostico of C is
+true and conclude that the diag_valor of C is fallo_trocola
+
+whenever bujias_var receives a value then conclude that the bujias of forito = the value
+of bujias_var
+
+for any coche C if the temperatura of C is desconocido and the gasolina of C is no then
+show temperatura_ask at the center of the screen
+
+for any coche C if the temperatura of C is no then conclude that the diagnostico of C is
+true and conclude that the diag_valor of C is revision
+
+for any coche C if the temperatura of C is si then invoke aceite_reglas rules
+whenever temperatura_var receives a value then conclude that the temperatura of forito
+= the value of temperatura_var
+
+for any coche C if the aceite of C is desconocido and the gasolina of C is no and the
+temperatura of C is si then show aceite_ask at the center of the screen
+
+for any coche C if the aceite of C is no then conclude that the diagnostico of C is true
+and conclude that the diag_valor of C is refrigeracion_mal
+
+for any coche C if the aceite of C is si then invoke humo_reglas rules
+
+whenever aceite_var receives a value then conclude that the aceite of forito = the value
+of aceite_var
+
+for any coche C if the humo of C is desconocido and the gasolina of C is no and the
+temperatura of C is si and the aceite of C is si then show humo_ask at the center of
+the screen
+
+for any coche C if the humo of C is no then conclude that the diagnostico of C is true
+and conclude that the diag_valor of C is carter_perf
+
+for any coche C if the humo of C is si then conclude that the diagnostico of C is true and
+conclude that the diag_valor of C is seg_cam_gastados
+
+whenever humo_var receives a value then conclude that the humo of forito = the value
+of humo_var

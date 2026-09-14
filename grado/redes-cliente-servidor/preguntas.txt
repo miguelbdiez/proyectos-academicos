@@ -1,0 +1,20 @@
+¿Cuál es el resultado de 8 + 5?#13
+¿Cuántos lados tiene un triángulo?#3
+¿Cuántos minutos hay en una hora?#60
+¿Cuántas semanas hay en un año?#52
+¿Cuál es el resultado de 12 multiplicado por 7?#84
+¿Cuántos dedos tiene una persona en una mano?#5
+¿Cuántos días tiene la semana?#7
+¿Cuál es el número atómico del carbono?#6
+¿Cuál es el número de la serie en la que Barney Stinson siempre dice "¡Espera un segundo!"?#83
+¿Cuál es el número de lados de un octágono?#8
+¿Cuántos dientes tiene un adulto, incluyendo muelas del juicio?#32
+¿Cuál es el número mágico en el juego de la ruleta?#7
+¿Cuántas vidas tiene un gato, según el dicho popular?#9
+¿Cuántas caras tiene un cubo?#6
+¿Cuántos dígitos hay en un número de teléfono típico?#10
+¿Cuál es el número de lados de un decágono?#10
+¿Cuál es el número atómico del oxígeno?#8
+¿Cuántas horas hay en un día?#24
+¿Cuál es el número en la parte inferior de una lata de refresco?#12
+¿Cuál es el número de la Casa Blanca en la calle Pennsylvania en Washington, D.C.?#1600

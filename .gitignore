@@ -1,0 +1,53 @@
+# Compilados C/C++
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.out
+a.out
+
+# Java
+*.class
+build/
+bin/
+target/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+htmlcov/
+.coverage
+.venv/
+venv/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+crash.log
+
+# Visual Studio / Eclipse
+.vs/
+Debug/
+Release/
+*.user
+.settings/
+.classpath
+.project
+
+# Typst / LaTeX
+*.aux
+*.out
+*.toc
+
+# Entorno
+.env
+
+# Sistema operativo / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
